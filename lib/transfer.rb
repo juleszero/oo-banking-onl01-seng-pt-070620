@@ -18,9 +18,9 @@ class Transfer
     #binding.pry
     if valid?
       @sender.balance - @amount
-      self.status = "complete"
+      @sender.status = "complete"
     else
-      self.status = "rejected"
+      @sender.status = "rejected"
       "Transaction rejected. Please check your account balance."
   end
 end
