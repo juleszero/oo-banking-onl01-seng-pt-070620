@@ -19,7 +19,7 @@ class Transfer
     if valid?
       new_bal = @sender.balance - @amount
       self.status = "complete"
-    else
+    elsif
       "Transaction rejected. Please check your account balance."
   end
   new_bal
