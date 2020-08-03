@@ -13,9 +13,7 @@ class Transfer
     self.sender.valid? && self.receiver.valid?
   end
   
-  def sender
-    BankAccount  
-  end
+  
   
 #   def execute_transaction
 #     if valid?
