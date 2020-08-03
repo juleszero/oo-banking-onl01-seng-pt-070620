@@ -15,12 +15,12 @@ class Transfer
   
   
   
-#   def execute_transaction
-#     if valid?
-#       @status = "complete"
-#     else
-#       "Transaction rejected. Please check your account balance."
-#   end
-# end
+  def execute_transaction
+    if valid?
+      @status = "complete"
+    else
+      "Transaction rejected. Please check your account balance."
+  end
+end
   
 end
