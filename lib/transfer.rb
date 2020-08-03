@@ -17,8 +17,7 @@ class Transfer
   def execute_transaction
     #binding.pry
     if valid?
-      new_bal = @sender.balance - @amount
-      new_bal
+      @receiver.balance = @sender.balance - @amount
     elsif sender.status == "closed"
       self.status = "rejected"
     elsif sender.balance < @amount  
