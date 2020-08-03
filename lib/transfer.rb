@@ -17,9 +17,9 @@ class Transfer
     BankAccount  
   end
   
-  
   def execute_transaction
-    
+    if valid?
+      
   end
   
 end
