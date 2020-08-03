@@ -18,7 +18,7 @@ class Transfer
     #binding.pry
     if valid?
       new_bal = @sender.balance - @amount
-      self.status = "complete"
+      new_bal
     elsif sender.status == "closed"
       self.status = "rejected"
     elsif sender.balance < @amount  
