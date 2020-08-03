@@ -17,7 +17,7 @@ class Transfer
   def execute_transaction
     #binding.pry
     if valid?
-      balance -= @amount
+      balance - @amount
       status = "complete"
     else
       status = "rejected"
