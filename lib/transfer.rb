@@ -27,7 +27,7 @@ class Transfer
   new_bal
 end
   
-  def reverse_transfer
-    self.execute_transaction 
-  end
+  # def reverse_transfer
+     
+  # end
 end
