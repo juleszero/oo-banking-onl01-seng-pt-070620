@@ -18,7 +18,6 @@ class Transfer
     #binding.pry
     if valid?
       @sender.balance - @amount
-      @receiver.balance + @amount
       @status = "complete"
     else
       @status = "rejected"
