@@ -26,6 +26,4 @@ class BankAccount
     @status = "closed"
   end
   
-  def 
-  
 end
